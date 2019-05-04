@@ -1,3 +1,163 @@
-body{
-color: red;
+
+* {
+  box-sizing: border-box;
+  background-color: white;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	
+	background-color: #3f3f3f;
+}
+
+.h1-center {
+	
+ margin: 0 auto;
+ width: auto; 
+ height: 80px;
+ background-color: white;
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-style: solid;
+ font-size: 35px;
+ align-self: auto;
+}
+
+p{
+  background-color:#9a9c9e;
+  padding:30px 0 0 0;
+}
+
+.row { 
+   padding-bottom: 50px;
+
+}
+
+.col {
+  width: 30%;
+  float: left;
+  margin-right: 5%;
+  border: 2px solid;
+ 
+}
+
+.col1 {
+  background-color:#9a9c9e;
+  position: relative;
+}
+
+.col2 {
+  background-color:#9a9c9e;
+  position: relative;
+}
+
+.col3 {
+  background-color:#9a9c9e;
+  position: relative;
+}
+
+.hposition
+{
+    width: auto;
+    text-align: center;
+    margin: 0;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 5px 5px 5px 5px ;
+}
+
+.hc
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #ef9e9e;
+    color: black;
+    
+}
+
+.hb
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #c94a4a;
+    color:white;
+}
+
+.hs
+{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #e2d48a;
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+   .col {
+    width: 30%;
+    float:left;
+    margin-right: 5%;
+   }
+  .col3 {
+   margin: 0;
+   }
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+  .col {
+    width: 47.5%;
+    float:left;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .col2 
+  {
+    margin-right: 0%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+.col3 {
+    clear: both;
+	float: none;
+	width: 100%;
+	margin-top: 5%;
+	
+    
+}
+
+   
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px)  {
+ 
+  .col1 {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	  margin-bottom: 5%;
+	}
+	
+	.col2 {
+		width: auto;
+		float: none;
+		margin-right: 0;
+		margin-bottom: 5%;
+	}
+	
+	.col3 {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
 }
